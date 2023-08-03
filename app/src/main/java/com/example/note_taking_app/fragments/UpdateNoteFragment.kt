@@ -52,13 +52,15 @@ class UpdateNoteFragment : Fragment(R.layout.fragment_update_note) {
 
         binding.etNoteTitleUpdate.setText(currentNote.noteTitle)
         binding.etNoteBodyUpdate.setText(currentNote.noteBody)
+        binding.date.text = currentNote.date
 
         binding.fabDone.setOnClickListener{
             val title = binding.etNoteTitleUpdate.text.toString().trim()
             val body = binding.etNoteBodyUpdate.text.toString().trim()
+            val date = binding.date.text.toString()
 
             if(title.isNotEmpty()){
-                val note = Note(currentNote.id,title,body)
+                val note = Note(currentNote.id,title,body,date)
                 notesViewModel.updateNote(note)
                 view.findNavController().navigate(R.id.action_updateNoteFragment_to_homeFragment)
             } else

@@ -10,13 +10,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Note_taking_app"
-        tools:targetApi="31">
-        <activity
-            android:name=".activity.UpdateActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.NewNoteActivity"
-            android:exported="false" />
+        tools:targetApi="31"
+        >
+
         <activity
             android:name=".SplashActivity"
             android:exported="true">

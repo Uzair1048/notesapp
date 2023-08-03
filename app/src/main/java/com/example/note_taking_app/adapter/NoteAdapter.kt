@@ -47,6 +47,7 @@ import java.util.*
 
         holder.itemBinding.tvNoteTitle.text = currentNote.noteTitle
         holder.itemBinding.tvNoteBody.text = currentNote.noteBody
+        holder.itemBinding.date.text = currentNote.date
 
         val random = Random()
         val color = Color.argb(
