@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Notes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_notes_text">"No Notes Available! Please Press + Button To Add New Note"</string>
+    <string name="note_title">Note Title</string>
+    <string name="note_body">Note Body</string>
+</resources>
